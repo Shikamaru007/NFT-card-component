@@ -1,1 +1,143 @@
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 18px;
+    line-height: 1.55;
+    height: -webkit-fill-available;
+}
+body {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    color: white;
+    height: 100vh;
+    height: -webkit-fill-available;
+}
+section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(13, 25, 43);    
+    display: flex;
+}
+.card {
+    background-color: rgb(20, 37, 61);
+    margin: auto;
+    max-width: 327px;
+    width: 100%;
+    padding: 1.15rem;
+    border-radius: 20px;
+}
+.image {
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.image:hover.image::after,
+.image:hover.image img:nth-child(2){
+    opacity: 1;
+}
+.image::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 255, 247, .5);
+    position: absolute;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.2s;
+    
+}
+.image img:first-child {
+    width: 100%;
+    border-radius: 10px;
+}
+.image img:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    margin: auto;
+    z-index: calc(10);
+    opacity: 0;
+    transition: all 0.2s;    
+}
+h2 {
+    font-weight: 600;
+    margin: 1rem auto; 
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+h2:hover{
+    color: rgba(0, 255, 247);
+    font-size: 1.6rem;
+}
+.eth-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto;    
+}
+.main-section p,
+.right-eth-details span,
+.footer span {
+    color: rgb(139, 172, 218);
+    font-weight: 400;
+}
+.left-eth-details{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: rgba(0, 255, 247, 0.87);
+    gap: .4em;
+    letter-spacing: 0.1px;
+}
+.left-eth-details img {
+    width: .8em;
+}
+.right-eth-details{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+.special {
+    width: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.special img {
+    width: 100%;
+}
+hr {
+    margin: 1.5rem auto;
+    border: 0.1px solid rgb(139, 172, 218, .2);
+}
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: .5rem;
+}
+.foot-img {
+    width: 2.2rem;
+    border: 1.5px solid white;
+    display: flex;
+    border-radius: 50%;
+}
+.foot-img img {
+    width: 100%;
+}
+#text-ft{
+    color:white;
+    cursor: pointer;
+}
+#text-ft:hover{
+    color: rgba(0, 255, 247, 0.87);
+}
